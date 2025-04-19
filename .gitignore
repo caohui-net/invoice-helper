@@ -1,9 +1,21 @@
-# 依赖目录
+# Dependencies
 node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
 
-# 构建输出
+# Build
 dist/
-build/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
 
 # 环境变量
 .env
@@ -12,16 +24,10 @@ build/
 
 # 日志文件
 *.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
 
 # 编辑器目录和文件
-.idea/
-.vscode/
 *.swp
 *.swo
-.DS_Store
 
 # 临时文件
 *.tmp
