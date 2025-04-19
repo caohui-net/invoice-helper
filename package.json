@@ -5,7 +5,8 @@
   "main": "src/invoice-helper.js",
   "scripts": {
     "dev": "rollup -c -w",
-    "build": "rollup -c"
+    "build": "rollup -c",
+    "deploy": "powershell -ExecutionPolicy Bypass -File ./deploy.ps1"
   },
   "keywords": [
     "tampermonkey",
