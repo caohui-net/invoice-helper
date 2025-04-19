@@ -33,7 +33,8 @@ invoice-helper/
 ├── dist/
 │   └── invoice-helper.user.js  # 编译后的脚本
 ├── package.json  # 项目配置
-└── rollup.config.js  # 构建配置
+├── rollup.config.js  # 构建配置
+└── deploy.ps1  # 自动部署脚本
 ```
 
 ### 开发环境设置
@@ -53,6 +54,23 @@ npm run dev
 npm run build
 ```
 
+4. 自动部署（构建并推送到GitHub）：
+```bash
+npm run deploy
+```
+
+### 自动部署说明
+
+项目配置了自动部署脚本，每次代码更新后，只需运行：
+```bash
+npm run deploy
+```
+
+这个命令会自动完成以下步骤：
+1. 构建最新版本
+2. 提交更改（使用时间戳作为提交信息）
+3. 推送到GitHub
+
 ## 注意事项
 
 - 需要浏览器支持WebAssembly（现代浏览器都支持）
@@ -64,6 +82,7 @@ npm run build
 - v1.0.0 (2024-03-21)
   - 初始版本发布
   - 实现基本的发票识别功能
+  - 添加自动部署功能
 
 ## 反馈与支持
 
